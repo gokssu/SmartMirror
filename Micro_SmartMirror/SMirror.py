@@ -17,7 +17,7 @@ from PIL import Image, ImageTk
 time_format = 24  # 12 or 24
 date_format = "%b %d, %Y"
 news_country_code = 'TR:tr'
-weather_api_token = '22a0c9adb4367effc1cae0d00a08af9e'
+weather_api_token = 'APIKEY'
 weather_city_id = '826716'
 weather_unit = 'metric'
 
@@ -59,90 +59,6 @@ class Start(Frame):
                               bg=background_color)
         self.startLbl.pack(side=TOP, anchor=NW)
         self.startLbl = Frame(self, bg=background_color)
-""""
-class Faces(Frame):
-
-    def __init__(self, parent):
-        Frame.__init__(self, parent, bg=background_color)
-        self.Facetext = 'Hi'
-        self.FaceLbl = Label(self, text=self.Facetext, font=(text_font, small_text_size), fg=text_color,
-                              bg=background_color)
-        self.FaceLbl.pack(side=TOP, anchor=NW)
-        self.FaceLbl = Frame(self, bg=background_color)
-       self.print_utf8_text()
-
-    def print_utf8_text(self,image, xy, text, color):
-        fontName = 'FreeSerif.ttf'
-        font = ImageFont.truetype(fontName, 24)
-        img_pil = Image.fromarray(image)
-        draw = ImageDraw.Draw(img_pil)
-        draw.text((xy[0], xy[1]), text, font=font,
-                  fill=(color[0], color[1], color[2], 0))
-        image = np.array(img_pil)
-        return image
-
-    recognizer = cv2.face.LBPHFaceRecognizer_create()
-    recognizer.read('train/train.yml')
-    cascadePath = "Cascades/haarcascade_frontalface_default.xml"
-    smilecascadePath = "Cascades/haarcascade_smile.xml"
-    smile_cascade = cv2.CascadeClassifier(smilecascadePath);
-    faceCascade = cv2.CascadeClassifier(cascadePath);
-    font = cv2.FONT_HERSHEY_SIMPLEX
-
-    id = 0
-    names = ['None', 'Goksu ', 'Bahadir', 'Utku', 'Senol']
-
-    cam = cv2.VideoCapture(0)
-    cam.set(3, 1000)
-    cam.set(4, 800)
-
-    minW = 0.1 * cam.get(3)
-    minH = 0.1 * cam.get(4)
-    while True:
-        ret, img = cam.read()
-        gri = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-
-        faces = faceCascade.detectMultiScale(
-            gri,
-            scaleFactor=1.2,
-            minNeighbors=5,
-            minSize=(int(minW), int(minH)),
-        )
-        for (x, y, w, h) in faces:
-            cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
-            id, confidence = recognizer.predict(gri[y:y + h, x:x + w])
-
-            if (confidence < 100):
-                id = names[id]
-                print(id)
-
-            else:
-                id = "unknown"
-                print(id)
-
-            color = (255, 255, 255)
-
-            smile = smile_cascade.detectMultiScale(gri,
-                                                   scaleFactor=1.7,
-                                                   minNeighbors=22,
-                                                   minSize=(25, 25),
-                                                   )
-
-            for (ex, ey, ew, eh) in smile:
-                cv2.rectangle(gri, (ex, ey), (ex + ew, ey + eh), (0, 255, 255), 2)
-                smile = "keep smiling "
-                print(smile)
-
-        k = cv2.waitKey(10) & 0xff
-        if k == 27 or k == ord('q'):
-            break
-    cam.release()
-
-
-
-
-
-"""
 
 
 class Clock(Frame):
@@ -256,9 +172,7 @@ class FullscreenWindow:
         # start
         self.start = Start(self.topFrame)
         self.start.pack(side=RIGHT, anchor=CENTER, padx=70, pady=200)
-        """      #face
-        self.face = Faces(self.topFrame)
-        self.face.pack(side=RIGHT, anchor=NW, padx=50, pady=200)"""
+
 
     def toggle_fullscreen(self, event=None):
         self.state = not self.state  # Just toggling the boolean
