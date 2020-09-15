@@ -10,4 +10,4 @@ Akıllı ayna hava durumunu, tarih&saat bilgilerini ve haberleri gösteriyor. Do
 ![pixiz-08-07-2020-21_01_25](https://user-images.githubusercontent.com/26454080/86959684-f33e6900-c166-11ea-8ed0-663d2f697be2.jpg)
 ![pixiz-08-07-2020-21_03_05](https://user-images.githubusercontent.com/26454080/86959688-f46f9600-c166-11ea-80bb-2dd1a9237a47.jpg)
 
-**Yazılım Kısmı**
+
