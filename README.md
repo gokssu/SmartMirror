@@ -1,8 +1,7 @@
 # SmartMirror
 Akıllı ayna hava durumunu, tarih&saat bilgilerini ve haberleri gösteriyor. Donanımsal olarak Normal camlı bir çerçeve, camı kaplamak için ayna görünümlü geçirgen bir filtre, Raspberry Pi 3 A+ modeli, 16 GB SD kart, android güç adaptörü ve philips 19 inç bir monitör kullandım.
 
-![WhatsApp Image 2020-06-29 at 14 11 35](https://user-images.githubusercontent.com/26454080/96104439-86630980-0ee1-11eb-9c4c-5552000d348b.jpeg)
-![image1 (1)](https://user-images.githubusercontent.com/26454080/96104446-882ccd00-0ee1-11eb-825a-1af6031c4f77.png)
+![WhatsApp Image 2020-06-29 at 14 11 35](https://user-images.githubusercontent.com/26454080/96104439-86630980-0ee1-11eb-9c4c-5552000d348b.jpeg) ![image1 (1)](https://user-images.githubusercontent.com/26454080/96104446-882ccd00-0ee1-11eb-825a-1af6031c4f77.png)
 
 
 **Donanım Kısmı**
